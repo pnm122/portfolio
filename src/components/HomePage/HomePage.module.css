@@ -1,0 +1,85 @@
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh;
+}
+
+#heroLeft {
+  max-width: 650px;
+}
+
+#heroLeft h2 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+#heroLeft p {
+  font-size: var(--ml-text);
+  margin-bottom: 18px;
+}
+
+#hero img {
+  height: 325px;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 16px;
+  column-gap: 16px;
+  position: relative;
+  background-color: var(--darker-bg);
+  padding: 32px;
+  border-radius: 40px;
+  transition: var(--transition);
+}
+
+#skills svg {
+  font-size: var(--xl-text);
+  fill: var(--muted-white);
+}
+
+#projects {
+  display: flex;
+  margin-top: 80px;
+}
+
+#projects > div:first-of-type {
+  width: 280px;
+  padding-right: 80px;
+}
+
+#projects > div:last-of-type {
+  flex: 1;
+}
+
+@media screen and (width < 850px) {
+  #hero img {
+    height: 250px;
+  }
+  #heroLeft p {
+    font-size: var(--m-text);
+  }
+
+  #skills {
+    flex-wrap: wrap;
+    column-gap: 0;
+    justify-content: flex-start;
+  }
+
+  #skills svg {
+    width: 16.66%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  #projects > div:first-of-type {
+    position: absolute;
+    left: -70px;
+  }
+
+  #projects > div:first-of-type svg {
+    width: 140px;
+  }
+}

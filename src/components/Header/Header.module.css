@@ -1,0 +1,91 @@
+.headerOuter {
+  background-color: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerInner a {
+  padding: 30px 16px;
+}
+
+#name {
+  font-weight: bold;
+  position: relative;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateX(-16px);
+}
+
+#name:hover {
+  opacity: 0.8;
+}
+
+#links {
+  display: flex;
+  gap: 8px;
+  transform: translateX(16px);
+}
+
+#links a {
+  position: relative;
+}
+
+#links a:not(:last-of-type)::after {
+  content: "/";
+  position: absolute;
+  color: var(--line-color);
+  left: calc(100% + 4px);
+  transform: translateX(-50%);
+}
+
+#links a span {
+  position: relative;
+}
+
+#links a:hover span {
+  color: white;
+}
+
+#links a:not(#selected) span::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: var(--transition);
+}
+
+#links a:not(#selected):hover span::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+#selected span {
+  position: relative;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#selected span::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gradient);
+}

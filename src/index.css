@@ -1,13 +1,183 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0 0 100px 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--bg);
+  color: white;
+
+  overflow-x: hidden;
+
+  --bg: #222;
+  --darker-bg: #161616;
+  --line-color: #555;
+  --muted-white: rgba(255, 255, 255, 0.75);
+  --yellow: #FAFF00;
+  --pink: #CC00FF;
+  --gradient: linear-gradient(115deg, var(--yellow), var(--pink));
+  --anchor-gradient: linear-gradient(to right, white, white, var(--yellow), var(--pink));
+  --transition: 0.2s ease-out;
+
+  --xxl-text: 5rem;
+  --xl-text: 4rem;
+  --l-text: 2.5rem;
+  --ml-text: 1.5rem;
+  --m-text: 1rem;
+  --s-text: 0.75rem;
+
+  --rounded-border: 8px;
+}
+
+p, span {
+  font-size: var(--m-text);
+  color: var(--muted-white);
+}
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+  color: white;
+}
+
+.with-gradient {
+  position: relative;
+  background: var(--anchor-gradient);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.with-gradient:hover {
+  background-position-x: 100%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: var(--transition);
+}
+
+button svg {
+  font-size: 0.8em;
+}
+
+.primary-button {
+  position: relative;
+  background: var(--gradient);
+  padding: 18px 24px;
+  font-size: var(--ml-text);
+  border-radius: var(--rounded-border);
+}
+
+.primary-button::before, .primary-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -99;
+  border: 3px solid white;
+  border-radius: var(--rounded-border);
+  opacity: 0;
+}
+
+.primary-button::before {
+  transition: 0.1s ease-out;
+}
+
+.primary-button::after {
+  transition: 0.2s ease-out;
+}
+
+.primary-button:hover::before {
+  opacity: 0.3;
+  left: 5px;
+  top: 5px;
+}
+
+.primary-button:hover::after {
+  opacity: 0.1;
+  left: 13px;
+  top: 13px;
+}
+
+p, span, a, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4, h5, h6 {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1360px;
+  padding-right: 80px;
+  padding-left: 80px;
+  margin: auto;
+}
+
+.rotate {
+  animation: rotates 12s linear infinite;
+  border-radius: 999px;
+}
+
+@keyframes rotates {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (width < 850px) {
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4, h5, h6 {
+    font-size: 1.25rem;
+  }
+  .primary-button {
+    font-size: var(--m-text);
+    padding: 14px 18px;
+  }
 }

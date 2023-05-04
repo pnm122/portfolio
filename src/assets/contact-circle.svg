@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.35 110.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: white;
+        font-family: Roboto-Bold, Roboto;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(54.4 20.42) rotate(12.29)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(69.01 23.16) rotate(37.73)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-1" transform="translate(81.68 32.44) rotate(63.97)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-1" transform="translate(88.53 46.84) rotate(86.78)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-1" transform="translate(89.74 59.49) rotate(111.1)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(84.49 73.87) rotate(136.11)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(74.23 84.16) rotate(159.55)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-1" transform="translate(61.32 88.57) rotate(174.84)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-1" transform="translate(56.23 89.94) rotate(-168.22)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(41.62 87.33) rotate(-142.79)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-1" transform="translate(28.86 78.17) rotate(-116.54)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-1" transform="translate(21.59 63.84) rotate(-91.52)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-1" transform="translate(20.56 51.17) rotate(-69.41)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(25.68 36.76) rotate(-44.4)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(35.87 26.37) rotate(-20.95)"><tspan x="0" y="0">T</tspan></text>
+</svg>
