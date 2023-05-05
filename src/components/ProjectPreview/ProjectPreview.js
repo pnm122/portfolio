@@ -3,7 +3,6 @@ import styles from './ProjectPreview.module.css';
 import { FaCss3, FaFigma, FaGithub, FaHtml5, FaJava, FaJs, FaReact } from 'react-icons/fa';
 import { SiAdobexd, SiFirebase, SiFlutter, SiSpring } from 'react-icons/si';
 import { Link } from 'react-router-dom';
-import flexcover from 'assets/flex-cover.png';
 
 export default function ProjectPreview({
   name,
@@ -13,7 +12,7 @@ export default function ProjectPreview({
   path,
   id
 }) {
-  let coverImage = flexcover;
+  let coverImage = images[0];
 
   const [mousePos, setMousePos] = useState({});
   const [hovering, setHovering] = useState(false);
@@ -93,13 +92,13 @@ export default function ProjectPreview({
       </Link>
       <div aria-hidden={!hovering} className={styles.hoverLine} />
       <div className={styles.projectDivider} />
-      <div 
+      <img 
+        src={window.location.origin + coverImage}
         aria-hidden={!hovering} 
         aria-disabled={!hasHovered} 
         style={{left: mousePos.x, top: mousePos.y}} 
-        className={styles.hoverPreview}>
-        <img src={coverImage} />
-      </div>
+        className={styles.hoverPreview}
+      />
     </>
   )
 }

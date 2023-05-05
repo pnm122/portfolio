@@ -61,19 +61,14 @@
 }
 
 .hoverPreview {
-  width: 350px;
-  height: 350px;
-  /* background-color: red; */
+  width: 325px;
+  height: 325px;
+  border-radius: var(--rounded-border);
   position: absolute;
   z-index: 1;
   transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
-}
-
-.hoverPreview img {
-  width: 90%;
-  margin: auto;
 }
 
 .hoverPreview[aria-hidden="true"]:not(.hoverPreview[aria-disabled="true"]) {

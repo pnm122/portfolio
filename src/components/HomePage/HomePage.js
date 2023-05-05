@@ -18,6 +18,7 @@ export default function Homepage() {
         description={project.shortDescription} 
         tools={project.tools}
         path={project.path}
+        images={project.images}
         id={project.id}
       />
     )

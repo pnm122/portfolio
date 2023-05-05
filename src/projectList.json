@@ -5,7 +5,7 @@
     "tools": ["js", "react", "css", "java", "spring", "github", "figma"],
     "shortDescription": "A fitness tracker created as part of a Software Engineering course at the University of Pittsburgh",
     "longDescription": "Test Long Description",
-    "images": [],
+    "images": ["/images/Flex/flex-cover.png"],
     "path": "flex"
   },
   {
@@ -14,7 +14,7 @@
     "tools": ["flutter", "firebase", "github", "adobexd"],
     "shortDescription": "A group chat application featuring accounts, instant messaging, replies, reactions, and more.",
     "longDescription": "Test Long Description",
-    "images": [],
+    "images": ["/images/Chat App/chatapp-cover.png"],
     "path": "flex"
   }
 ]
