@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0 0 100px 0;
+  margin: 0;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -59,7 +59,7 @@ a {
   background-position-x: 100%;
 }
 
-button {
+button, a {
   cursor: pointer;
   outline: none;
   border: none;
@@ -69,8 +69,39 @@ button {
   transition: var(--transition);
 }
 
-button svg {
+button svg, a svg {
   font-size: 0.8em;
+}
+
+.large-anchor {
+  font-size: var(--l-text);
+  margin: 40px 0;
+  position: relative;
+}
+
+.large-anchor svg {
+  font-size: 0.7em;
+}
+
+.large-anchor:hover {
+  gap: 0.65em;
+}
+
+.large-anchor::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: var(--transition);
+}
+
+.large-anchor:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
 }
 
 .primary-button {

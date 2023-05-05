@@ -50,8 +50,21 @@
   padding-right: 80px;
 }
 
+#projects > div:first-of-type svg {
+  position: sticky;
+  top: 80px;
+}
+
 #projects > div:last-of-type {
   flex: 1;
+}
+
+#seeAllProjects {
+  display: flex;
+}
+
+#last {
+  height: 1000px;
 }
 
 @media screen and (width < 850px) {
@@ -76,10 +89,10 @@
 
   #projects > div:first-of-type {
     position: absolute;
-    left: -70px;
+    left: -60px;
   }
 
   #projects > div:first-of-type svg {
-    width: 140px;
+    width: 120px;
   }
 }

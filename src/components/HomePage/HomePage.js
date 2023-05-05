@@ -8,6 +8,7 @@ import { ReactComponent as ProjectsCircle } from '../../assets/projects-circle.s
 import { ReactComponent as ContactCircle } from '../../assets/contact-circle.svg'
 import projects from '../../projectList.json';
 import ProjectPreview from '../ProjectPreview/ProjectPreview';
+import { Link } from 'react-router-dom';
 
 export default function Homepage() {
   let projectsRender = projects.map(project => {
@@ -55,8 +56,12 @@ export default function Homepage() {
         <div><ProjectsCircle width={200} className="rotate" /></div>
         <div>
           {projectsRender}
+          <div id={styles.seeAllProjects}>
+            <Link className="large-anchor" to="/projects">See all my projects <FaArrowRight /></Link>
+          </div>
         </div>
       </div>
+      <div className="container" id={styles.last}></div>
       {/* <ContactCircle width={200} className="rotate" /> */}
     </>
   )

@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Flex",
     "tools": ["js", "react", "css", "java", "spring", "github", "figma"],
-    "shortDescription": "A fitness tracker created as part of a Software Engineering course at the University of Pittsburgh",
+    "shortDescription": "A fitness tracker created as part of a Software Engineering course at the University of Pittsburgh.",
     "longDescription": "Test Long Description",
     "images": ["/images/Flex/flex-cover.png"],
     "path": "flex"
@@ -13,6 +13,15 @@
     "name": "Chat App",
     "tools": ["flutter", "firebase", "github", "adobexd"],
     "shortDescription": "A group chat application featuring accounts, instant messaging, replies, reactions, and more.",
+    "longDescription": "Test Long Description",
+    "images": ["/images/Chat App/chatapp-cover.png"],
+    "path": "flex"
+  },
+  {
+    "id": 3,
+    "name": "Music App",
+    "tools": ["flutter", "github", "adobexd"],
+    "shortDescription": "A music-based mobile social media app created as part of a course at the University of Pittsburgh.",
     "longDescription": "Test Long Description",
     "images": ["/images/Chat App/chatapp-cover.png"],
     "path": "flex"

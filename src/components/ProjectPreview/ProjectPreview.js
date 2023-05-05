@@ -82,7 +82,7 @@ export default function ProjectPreview({
   return (
     <>
       <Link onMouseEnter={() => { setHovering(true); setHasHovered(true) }} onMouseLeave={() => setHovering(false)} to={`/projects/${path}`} className={styles.project} id={`project${id}`}>
-        <div>
+        <div className={styles.projectInfo}>
           <h2>{name}</h2>
           <p>{description}</p>
         </div>
@@ -90,8 +90,8 @@ export default function ProjectPreview({
           {toolsRender}
         </div>
       </Link>
-      <div aria-hidden={!hovering} className={styles.hoverLine} />
-      <div className={styles.projectDivider} />
+      <div aria-hidden={!hovering} className={styles.lines}>
+      </div>
       <img 
         src={window.location.origin + coverImage}
         aria-hidden={!hovering} 
