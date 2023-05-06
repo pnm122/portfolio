@@ -3,10 +3,12 @@
   justify-content: space-between;
   align-items: center;
   min-height: 70vh;
+  gap: 10vw;
 }
 
 #heroLeft {
-  max-width: 650px;
+  flex: 1;
+  /* max-width: 650px; */
 }
 
 #heroLeft h2 {
