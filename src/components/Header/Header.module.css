@@ -1,8 +1,27 @@
-.headerOuter {
-  background-color: var(--bg);
+#headerOuter {
+  background: rgba(var(--bg-rgb), 0.7);
+  backdrop-filter: blur(15px);
   position: sticky;
   top: 0;
   z-index: 99;
+}
+
+#headerOuter::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  background-color: var(--line-color);
+  transition: var(--transition-3);
+}
+
+.scrolledHeader:after {
+  width: 100% !important;
+  right: auto !important;
+  left: 0 !important;
 }
 
 .headerInner {

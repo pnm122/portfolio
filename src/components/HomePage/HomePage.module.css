@@ -42,38 +42,6 @@
   fill: var(--muted-white);
 }
 
-.twoColumns {
-  display: flex;
-  margin-top: 80px;
-}
-
-.twoColumns > div:last-of-type {
-  flex: 1;
-}
-
-.circleTitleWrapper {
-  width: 280px;
-  padding-right: 80px;
-}
-
-.circleTitleWrapper svg {
-  position: sticky;
-  top: 80px;
-}
-
-.contactWrapper {
-  align-items: center;
-}
-
-.contactWrapper a {
-  gap: 0;
-}
-
-.contactWrapper a span {
-  display: inline-block;
-  font-size: var(--xl-text);
-}
-
 @media screen and (width < 850px) {
   #hero img {
     height: 250px;

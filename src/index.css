@@ -15,18 +15,21 @@ body {
 
   overflow-x: hidden;
 
-  --bg: #222;
+  --bg: rgb(34, 34, 34);
+  --bg-rgb: 34, 34, 34;
   --darker-bg: #161616;
   --line-color: #555;
   --muted-white: rgba(255, 255, 255, 0.75);
   --yellow: #FAFF00;
+  --yellow-rgb: 250, 255, 0;
   --pink: #CC00FF;
   --gradient: linear-gradient(115deg, var(--yellow), var(--pink));
   --anchor-gradient: linear-gradient(to right, white, white, var(--yellow), var(--pink));
-  --transition: 0.2s ease-out;
-  --transition-2: 0.5s cubic-bezier(.2,.8,.4,.94);
-  --transition-3: 1.5s cubic-bezier(.2,.8,.4,.94);
+  --transition: 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+  --transition-2: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  --transition-3: 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 
+  /* transition:  */
   --xxl-text: 5rem;
   --xl-text: 4rem;
   --l-text: 2.5rem;
@@ -301,6 +304,25 @@ h4, h5, h6 {
   width: 100%;
   border-radius: var(--rounded-border);
   box-shadow: 0 0 16px inset #0009;
+}
+
+.two-columns {
+  display: flex;
+  margin-top: 80px;
+}
+
+.two-columns > div:last-of-type {
+  flex: 1;
+}
+
+.circle-title-wrapper {
+  width: 280px;
+  padding-right: 80px;
+}
+
+.circle-title-wrapper svg {
+  position: sticky;
+  top: 90px;
 }
 
 @media screen and (width < 850px) {

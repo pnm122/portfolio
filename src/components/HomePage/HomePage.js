@@ -5,10 +5,10 @@ import Header from '../Header/Header';
 import styles from './HomePage.module.css';
 import picture from '../../assets/portfolio-picture.png';
 import { ReactComponent as ProjectsCircle } from '../../assets/projects-circle.svg'
-import { ReactComponent as ContactCircle } from '../../assets/contact-circle.svg'
 import projects from '../../projectList.json';
 import ProjectPreview from '../ProjectPreview/ProjectPreview';
 import { Link } from 'react-router-dom';
+import Footer from 'components/Footer/Footer';
 
 export default function Homepage() {
 
@@ -168,8 +168,8 @@ export default function Homepage() {
           <SiAdobexd />
         </div>
       </div>
-      <div className={`container ${styles.twoColumns} fadeIn`} id="removeFadeIn">
-        <div className={styles.circleTitleWrapper}><ProjectsCircle width={200} className="rotate" /></div>
+      <div className="container two-columns fadeIn" id="removeFadeIn">
+        <div className="circle-title-wrapper"><ProjectsCircle width={200} className="rotate" /></div>
         <div>
           {projectsRender}
           <div className="flex">
@@ -177,19 +177,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <div className={`container ${styles.twoColumns} fadeIn`}>
-        <div className={styles.circleTitleWrapper}><ContactCircle width={200} className="rotate" /></div>
-        <div className={`flex ${styles.contactWrapper}`}>
-          <div>
-            <a href="mailto:pnmartin02@gmail.com" className="with-gradient">
-              <p>
-                <span>pnmartin02</span>
-                <span>@gmail.com</span>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </>
   )
 }
