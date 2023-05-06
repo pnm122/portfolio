@@ -9,6 +9,7 @@ export default function Footer() {
         <div className="circle-title-wrapper"><ContactCircle width={200} className="rotate" /></div>
         <div className={`flex ${styles.contactWrapper}`}>
           <div>
+            <p>Let's chat</p>
             <a href="mailto:pnmartin02@gmail.com" className="with-gradient">
               <p>
                 <span>pnmartin02</span>
@@ -20,7 +21,7 @@ export default function Footer() {
       </div>
       <div id={styles.footer}>
         <div className="container">
-          
+
         </div>
       </div>
     </>

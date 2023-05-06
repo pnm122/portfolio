@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 70vh;
+  margin-bottom: 20px;
   gap: 10vw;
 }
 
@@ -46,9 +47,6 @@
   #hero img {
     height: 250px;
   }
-  #heroLeft p {
-    font-size: var(--m-text);
-  }
 
   #skills {
     flex-wrap: wrap;
@@ -61,13 +59,10 @@
     padding-left: 8px;
     padding-right: 8px;
   }
+}
 
-  .circleTitleWrapper {
-    position: absolute;
-    left: -60px;
-  }
-
-  .circleTitleWrapper svg {
-    width: 120px;
+@media screen and (width < 625px) {
+  #hero img {
+    display: none;
   }
 }

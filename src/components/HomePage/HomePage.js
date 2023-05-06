@@ -141,7 +141,7 @@ export default function Homepage() {
         <div id={styles.heroLeft}>
           <h4>Hi, I'm</h4>
           <h2>Pierce Martin</h2>
-          <p className="animateIn code">// I'm a software developer with a particular passion for frontend design.</p>
+          <p className="animateIn code">// I'm a software developer with a passion for frontend design.</p>
           <div id="ctaWrapper">
             <button id="cta" className="primary-button">
               Contact Me 
