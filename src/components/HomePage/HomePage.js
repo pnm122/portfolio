@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 import styles from './HomePage.module.css';
 import picture from '../../assets/portfolio-picture.png';
 import { ReactComponent as ProjectsCircle } from '../../assets/projects-circle.svg'
-import projects from '../../projectList.json';
+import getProjectsRender from 'getProjectsRender';
 import ProjectPreview from '../ProjectPreview/ProjectPreview';
 import { Link } from 'react-router-dom';
 import Footer from 'components/Footer/Footer';
@@ -15,7 +15,7 @@ export default function Homepage() {
   useEffect(() => {
     // For some reason the animation on the projects wrapper causes the project hover images to be positioned relative to the wrapper
     // I have no idea why this is the case, but one janky solution is to remove the fadeIn class after the fade-in occurs, like this
-    setTimeout(() => {
+    let removeFadeInTimeout = setTimeout(() => {
       document.getElementById("removeFadeIn").classList.remove("fadeIn");
     }, 1500)
 
@@ -47,6 +47,10 @@ export default function Homepage() {
 
       animateIn(elem);
     }
+
+    return () => {
+      clearTimeout(removeFadeInTimeout);
+    }
   }, [])
 
   const animateIn = elem => {
@@ -74,7 +78,10 @@ export default function Homepage() {
 
           // Animate in the CTA after all the text is displayed
           setTimeout(() => {
-            document.getElementById("cta").classList.add("ctaAnimateIn");
+            let cta = document.getElementById("cta");
+            // stops null error when switching pages before the cta animates in
+            // not a great solution, I should clear the timeouts instead but I couldn't quite figure it out
+            if(cta != null) cta.classList.add("ctaAnimateIn");
           }, WAIT_AFTER_TIME + CTA_DELAY)
 
         } else {
@@ -120,19 +127,7 @@ export default function Homepage() {
     return numSpansCombined;
   }
 
-  let projectsRender = projects.map(project => {
-    return (
-      <ProjectPreview 
-        key={project.id}
-        name={project.name} 
-        description={project.shortDescription} 
-        tools={project.tools}
-        path={project.path}
-        images={project.images}
-        id={project.id}
-      />
-    )
-  })
+  let projectsRender = getProjectsRender({limit: 3});
 
   return (
     <>

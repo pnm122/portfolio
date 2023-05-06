@@ -1,0 +1,27 @@
+#title {
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#titleInner {
+  overflow: hidden;
+}
+
+#projectsTitle {
+  display: inline-block;
+  line-height: 1.2em;
+  white-space: nowrap;
+  animation: move 60s linear infinite;
+}
+
+#projectsTitle span {
+  color: inherit;
+  font-size: inherit;
+}
+
+#subtitle {
+  font-size: var(--ml-text);
+  margin-top: 1em;
+}
