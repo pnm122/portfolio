@@ -40,31 +40,36 @@
   fill: var(--muted-white);
 }
 
-#projects {
+.twoColumns {
   display: flex;
   margin-top: 80px;
 }
 
-#projects > div:first-of-type {
+.twoColumns > div:last-of-type {
+  flex: 1;
+}
+
+.circleTitleWrapper {
   width: 280px;
   padding-right: 80px;
 }
 
-#projects > div:first-of-type svg {
+.circleTitleWrapper svg {
   position: sticky;
   top: 80px;
 }
 
-#projects > div:last-of-type {
-  flex: 1;
+.contactWrapper {
+  align-items: center;
 }
 
-#seeAllProjects {
-  display: flex;
+.contactWrapper a {
+  gap: 0;
 }
 
-#last {
-  height: 1000px;
+.contactWrapper a span {
+  display: inline-block;
+  font-size: var(--xl-text);
 }
 
 @media screen and (width < 850px) {
@@ -87,12 +92,12 @@
     padding-right: 8px;
   }
 
-  #projects > div:first-of-type {
+  .circleTitleWrapper {
     position: absolute;
     left: -60px;
   }
 
-  #projects > div:first-of-type svg {
+  .circleTitleWrapper svg {
     width: 120px;
   }
 }

@@ -33,7 +33,7 @@
   right: 0;
   height: 1px;
   background: white;
-  transition: 0.5s cubic-bezier(.2,.8,.4,.94);
+  transition: var(--transition-2);
   transform: translateY(1px);
   z-index: -99;
 }
@@ -52,7 +52,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5s cubic-bezier(.2,.8,.4,.94);
+  transition: var(--transition-2);
 }
 
 .project:hover h2 {
