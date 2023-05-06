@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { ReactComponent as ContactCircle } from '../../assets/contact-circle.svg';
+import { FaArrowRight, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="circle-title-wrapper"><ContactCircle width={200} className="rotate" /></div>
         <div className={`flex ${styles.contactWrapper}`}>
           <div>
-            <p>Let's chat</p>
+            <p>Let's chat!</p>
             <a href="mailto:pnmartin02@gmail.com" className="with-gradient">
               <p>
                 <span>pnmartin02</span>
@@ -20,8 +21,23 @@ export default function Footer() {
         </div>
       </div>
       <div id={styles.footer}>
-        <div className="container">
-
+        <div id={styles.innerFooter} className="container fadeIn">
+          <div id={styles.links}>
+            <div>
+              <a href="#">
+                <FaGithub />
+                <span>GitHub</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <FaLinkedin />
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <a className="large-anchor" id={styles.src} href="https://github.com/pnm122/portfolio">View this portfolio's source <FaArrowRight /></a>
+          <span id={styles.copyright}>© 2023</span>
         </div>
       </div>
     </>

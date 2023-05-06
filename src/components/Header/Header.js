@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Header({selected}) {
 
@@ -26,10 +27,10 @@ export default function Header({selected}) {
   return (
     <header id={styles.headerOuter}>
       <div className={`container ${styles.headerInner}`}>
-        <a href="#" id={styles.name}>Pierce Martin</a>
+        <Link to="/" id={styles.name}>Pierce Martin</Link>
         <div id={styles.links}>
           <a href="#" id={selected == 0 ? styles.selected : null}><span>Resume</span></a>
-          <a href="#" id={selected == 1 ? styles.selected : null}><span>Projects</span></a>
+          <Link to="/projects" id={selected == 1 ? styles.selected : null}><span>Projects</span></Link>
           <a href="#" id={selected == 2 ? styles.selected : null}><span>Contact Me</span></a>
         </div>
       </div>

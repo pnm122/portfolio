@@ -13,5 +13,57 @@
 
 #footer {
   background: linear-gradient(to bottom, rgba(var(--yellow-rgb), 0), rgba(var(--yellow-rgb), 0.07));
-  height: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+#innerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75em;
+}
+
+#links {
+  display: flex;
+  gap: 16px;
+}
+
+#links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+
+#links a {
+  color: var(--muted-white);
+}
+
+#links a span {
+  transition: var(--transition);
+}
+
+#links a:hover, #links a:hover span {
+  color: white;
+}
+
+#links svg {
+  font-size: var(--l-text);
+}
+
+#src {
+  color: var(--muted-white);
+  margin: 0;
+  font-size: var(--m-text);
+}
+
+#src:hover {
+  color: white;
+}
+
+#copyright {
+  color: rgba(255, 255, 255, 0.25);
 }
