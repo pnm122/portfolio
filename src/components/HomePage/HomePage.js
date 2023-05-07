@@ -13,6 +13,8 @@ import Footer from 'components/Footer/Footer';
 export default function Homepage() {
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    
     // For some reason the animation on the projects wrapper causes the project hover images to be positioned relative to the wrapper
     // I have no idea why this is the case, but one janky solution is to remove the fadeIn class after the fade-in occurs, like this
     let removeFadeInTimeout = setTimeout(() => {

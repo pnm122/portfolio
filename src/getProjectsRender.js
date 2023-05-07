@@ -15,7 +15,7 @@ export default function getProjectsRender({limit}) {
         description={project.shortDescription} 
         tools={project.tools}
         path={project.path}
-        images={project.images}
+        cover={project.cover}
         id={project.id}
       />
     )

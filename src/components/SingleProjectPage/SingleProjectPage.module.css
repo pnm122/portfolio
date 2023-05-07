@@ -29,3 +29,61 @@
   width: 60%;
   line-height: 1.35em;
 }
+
+#images {
+  margin-top: 80px;
+}
+
+#images img {
+  width: 100%;
+  border-radius: var(--rounded-border);
+}
+
+#images img:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links > div {
+  display: flex;
+}
+
+#links > div > a {
+  flex-shrink: 1;
+}
+
+#nextProject {
+  position: relative;
+}
+
+#nextProject span {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+@media screen and (width < 925px) {
+  #links a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (width < 850px) {
+  #description {
+    width: 100%;
+  }
+}
+
+@media screen and (width < 775px) {
+  #links {
+    flex-direction: column;
+  }
+
+  #nextProject a {
+    margin-top: 0;
+  }
+}

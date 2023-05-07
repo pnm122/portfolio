@@ -9,11 +9,10 @@ export default function ProjectPreview({
   name,
   description,
   tools,
-  images,
+  cover,
   path,
   id
 }) {
-  let coverImage = images[0];
 
   const [mousePos, setMousePos] = useState({});
   const [hovering, setHovering] = useState(false);
@@ -55,7 +54,7 @@ export default function ProjectPreview({
       <div aria-hidden={!hovering} className={styles.lines}>
       </div>
       <img 
-        src={window.location.origin + coverImage}
+        src={window.location.origin + cover}
         aria-hidden={!hovering} 
         aria-disabled={!hasHovered} 
         style={{left: mousePos.x, top: mousePos.y}} 

@@ -368,3 +368,10 @@ h6 {
     width: 120px;
   }
 }
+
+@media screen and (width < 650px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
