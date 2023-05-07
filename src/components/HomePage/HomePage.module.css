@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (width < 625px) {
+@media screen and (width < 650px) {
   #hero img {
     display: none;
   }
