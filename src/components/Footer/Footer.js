@@ -24,19 +24,19 @@ export default function Footer() {
         <div id={styles.innerFooter} className="container fadeIn">
           <div id={styles.links}>
             <div>
-              <a href="#">
+              <a href="https://github.com/pnm122" target="_blank">
                 <FaGithub />
                 <span>GitHub</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/pierce-martin-02/" target="_blank">
                 <FaLinkedin />
                 <span>LinkedIn</span>
               </a>
             </div>
           </div>
-          <a className="large-anchor" id={styles.src} href="https://github.com/pnm122/portfolio">View this portfolio's source <FaArrowRight /></a>
+          <a className="large-anchor" id={styles.src} href="https://github.com/pnm122/portfolio" target="_blank">View this portfolio's source <FaArrowRight /></a>
           <span id={styles.copyright}>© 2023</span>
         </div>
       </div>

@@ -138,10 +138,10 @@ export default function Homepage() {
           <h2>Pierce Martin</h2>
           <p className="animateIn code">// I'm a software developer with a passion for frontend design.</p>
           <div id="ctaWrapper">
-            <button id="cta" className="primary-button">
+            <a href="#contact" id="cta" className="primary-button">
               Contact Me 
               <FaArrowRight />
-            </button>
+            </a>
             <div id="cta-hover-1"></div>
             <div id="cta-hover-2"></div>
           </div>
@@ -168,7 +168,7 @@ export default function Homepage() {
         <div>
           {projectsRender}
           <div className="flex">
-            <Link className="large-anchor" to="/projects">See all my projects <FaArrowRight /></Link>
+            <Link className="large-anchor underline-anchor" to="/projects">See all my projects <FaArrowRight /></Link>
           </div>
         </div>
       </div>

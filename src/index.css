@@ -92,14 +92,18 @@ button svg, a svg {
   font-size: 0.7em;
 }
 
-.large-anchor:hover {
+.underline-anchor {
+  position: relative;
+}
+
+.underline-anchor:hover {
   gap: 0.65em;
 }
 
-.large-anchor::after {
+.underline-anchor::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -0.2em;
   right: 0;
   width: 0;
   height: 1px;
@@ -107,7 +111,7 @@ button svg, a svg {
   transition: var(--transition);
 }
 
-.large-anchor:hover::after {
+.underline-anchor:hover::after {
   width: 100%;
   left: 0;
   right: auto;
@@ -120,6 +124,7 @@ button svg, a svg {
   font-size: var(--ml-text);
   border-radius: var(--rounded-border);
   white-space: nowrap;
+  color: black;
 }
 
 .primary-button > * {
@@ -185,8 +190,13 @@ h3 {
   font-size: var(--l-text);
 }
 
-h4, h5, h6 {
+h4, h5 {
   font-size: var(--ml-text);
+}
+
+h6 {
+  font-size: var(--m-text);
+  color: var(--muted-white);
 }
 
 .flex {
@@ -328,6 +338,11 @@ h4, h5, h6 {
 .circle-title-wrapper svg {
   position: sticky;
   top: 90px;
+}
+
+#title {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (width < 850px) {

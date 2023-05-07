@@ -3,6 +3,7 @@ import styles from './ProjectPreview.module.css';
 import { FaCss3, FaFigma, FaGithub, FaHtml5, FaJava, FaJs, FaReact } from 'react-icons/fa';
 import { SiAdobexd, SiFirebase, SiFlutter, SiSpring } from 'react-icons/si';
 import { Link } from 'react-router-dom';
+import toolsToRender from 'toolsToRender';
 
 export default function ProjectPreview({
   name,
@@ -38,46 +39,7 @@ export default function ProjectPreview({
     }
   }, [handleMouseMove])
 
-  let toolsRender = [];
-  for(let tool of tools) {
-    switch(tool) {
-      case 'html':
-        toolsRender.push(<FaHtml5 />);
-        break;
-      case 'css':
-        toolsRender.push(<FaCss3 />);
-        break;
-      case 'js':
-        toolsRender.push(<FaJs />);
-        break;
-      case 'react':
-        toolsRender.push(<FaReact />);
-        break;
-      case 'java':
-        toolsRender.push(<FaJava />);
-        break;
-      case 'spring':
-        toolsRender.push(<SiSpring />);
-        break;
-      case 'flutter':
-        toolsRender.push(<SiFlutter />);
-        break;
-      case 'firebase':
-        toolsRender.push(<SiFirebase />);
-        break;
-      case 'github':
-        toolsRender.push(<FaGithub />);
-        break;
-      case 'figma':
-        toolsRender.push(<FaFigma />);
-        break;
-      case 'adobexd':
-        toolsRender.push(<SiAdobexd />);
-        break;
-      default:
-        console.log("UNKNOWN TYPE: " + tool);
-    }
-  }
+  let toolsRender = toolsToRender(tools);
 
   return (
     <>

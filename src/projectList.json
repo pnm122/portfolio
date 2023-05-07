@@ -4,18 +4,29 @@
     "name": "Flex",
     "tools": ["js", "react", "css", "java", "spring", "github", "figma"],
     "shortDescription": "A fitness tracker created as part of a Software Engineering course at the University of Pittsburgh.",
-    "longDescription": "Test Long Description",
+    "longDescription": "Flex is a responsive web application that allows users to track their weight, intake, and workouts while monitoring their progress to goals over time. The frontend was developed using React, and the backend uses Java Spring Boot and MySQL. I worked on this project with 4 other students from the University of Pittsburgh as part of a Software Engineering course. Part of the requirements for this project was to use Agile Scrum as the basis for our software development methodology. We performed requirements analysis, created diagrams (including class, activity, use case, etc.), and planned and tracked our progress using backlogs and user stories maintained in a Trello board. My primary responsibility for the project was to design and implement most of the frontend. I created prototypes in Figma, then transferred these into a working app with React. I also helped to develop APIs and decide the structure and scope of the app. [CHALLENGES]",
+    "time": "2023",
     "images": ["/images/Flex/flex-cover.png"],
-    "path": "flex"
+    "path": "flex",
+    "source": {
+      "type": "GitHub",
+      "link": "https://github.com/phidalgodiblasio/Flex"
+    }
   },
   {
     "id": 2,
     "name": "Chat App",
     "tools": ["flutter", "firebase", "github", "adobexd"],
     "shortDescription": "A group chat application featuring accounts, instant messaging, replies, reactions, and more.",
-    "longDescription": "Test Long Description",
+    "longDescription": "Chat App is a responsive web application that allows users to create accounts with email/password or their Google account, create and join group chats, send and receive messages, and reply and react to messages. The application was created using Flutter, and I used Firebase as the database to store users, groups, and messages. This project was designed and developed entirely by me, with the goal of learning as much about Flutter as possible while using Firebase for the first time. I also used Adobe XD to develop and compare design ideas. Chat App is deployed live at https://chatapp-ba297.web.app/.",
+    "time": "2022-2023",
     "images": ["/images/Chat App/chatapp-cover.png"],
-    "path": "flex"
+    "path": "chat-app",
+    "source": {
+      "type": "GitHub",
+      "link": "https://github.com/pnm122/chatapp"
+    },
+    "liveUrl": "https://chatapp-ba297.web.app/"
   },
   {
     "id": 3,
@@ -23,7 +34,12 @@
     "tools": ["flutter", "github", "adobexd"],
     "shortDescription": "A music-based mobile social media app created as part of a course at the University of Pittsburgh.",
     "longDescription": "Test Long Description",
+    "time": "2022",
     "images": ["/images/Chat App/chatapp-cover.png"],
-    "path": "flex"
+    "path": "music-app",
+    "source": {
+      "type": "GitHub",
+      "link": "https://github.com/pnm122/cs1635-music-app"
+    }
   }
 ]

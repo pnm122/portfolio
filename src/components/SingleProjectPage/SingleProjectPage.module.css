@@ -1,0 +1,31 @@
+#infoTable {
+  text-align: left;
+  border-spacing: 0;
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+#infoTable th {
+  font-weight: 400;
+  color: var(--muted-white);
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--line-color);
+}
+
+#infoTable th:not(:last-of-type), #infoTable td:not(:last-of-type) {
+  padding-right: 40px;
+}
+
+#infoTable td {
+  color: white;
+  padding-top: 0.5em;
+}
+
+#infoTable svg:not(:last-of-type) {
+  margin-right: 0.3em;
+}
+
+#description {
+  width: 60%;
+  line-height: 1.35em;
+}

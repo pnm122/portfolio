@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import HomePage from './components/HomePage/HomePage';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
+import SingleProjectPage from 'components/SingleProjectPage/SingleProjectPage';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/projects",
-    element: <ProjectsPage />
+    element: <ProjectsPage />,
+  },
+  {
+    path: "/projects/:path",
+    element: <SingleProjectPage />
   }
 ])
 
