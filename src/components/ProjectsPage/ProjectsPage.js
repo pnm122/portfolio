@@ -8,6 +8,12 @@ export default function ProjectsPage() {
   let dist = 0;
 
   useEffect(() => {
+    // For some reason the animation on the projects wrapper causes the project hover images to be positioned relative to the wrapper
+    // I have no idea why this is the case, but one janky solution is to remove the fadeIn class after the fade-in occurs, like this
+    let removeFadeInTimeout = setTimeout(() => {
+      document.getElementById("removeFadeIn").classList.remove("fadeIn");
+    }, 1500)
+    
     let titleDOM = document.getElementById(styles.projectsTitle);
     // Make 10 copies of the text, separated by [separator]
     if(titleDOM.children.length == 0) {
@@ -48,7 +54,7 @@ export default function ProjectsPage() {
         </div>
         <p id={styles.subtitle}>These are my best works.</p>
       </div>
-      <div className="container fadeIn">
+      <div className="container fadeIn" id="removeFadeIn">
         {projectsRender}
       </div>
       <Footer />

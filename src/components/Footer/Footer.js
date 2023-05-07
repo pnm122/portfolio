@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={`flex ${styles.contactWrapper}`}>
           <div>
             <p>Let's chat!</p>
-            <a href="mailto:pnmartin02@gmail.com" className="with-gradient">
+            <a href="mailto:pnmartin02@gmail.com" className="with-gradient" id="contact">
               <p>
                 <span>pnmartin02</span>
                 <span>@gmail.com</span>

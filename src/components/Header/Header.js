@@ -31,7 +31,7 @@ export default function Header({selected}) {
         <div id={styles.links}>
           <a href="#" id={selected == 0 ? styles.selected : null}><span>Resume</span></a>
           <Link to="/projects" id={selected == 1 ? styles.selected : null}><span>Projects</span></Link>
-          <a href="#" id={selected == 2 ? styles.selected : null}><span>Contact Me</span></a>
+          <a href="#contact" id={selected == 2 ? styles.selected : null}><span>Contact Me</span></a>
         </div>
       </div>
     </header>
