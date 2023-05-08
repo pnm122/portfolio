@@ -166,6 +166,17 @@
     transform: none;
   }
 
+  #links[aria-expanded="true"] {
+    transform: translateX(0);
+  }
+
+  #links[aria-expanded="false"] {
+    /* Make sure links container is off of the page after all of the links animate out */
+    transition: 0s;
+    transition-delay: 400ms;
+    transform: translateX(500px);
+  }
+
   #links[aria-expanded="true"] a {
     transform: translateX(0);
   }
