@@ -360,12 +360,7 @@ h6 {
   }
 
   .circle-title-wrapper {
-    position: absolute;
-    left: -60px;
-  }
-
-  .circle-title-wrapper svg {
-    width: 120px;
+    display: none;
   }
 }
 

@@ -36,7 +36,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <a className="large-anchor" id={styles.src} href="https://github.com/pnm122/portfolio" target="_blank">View this portfolio's source <FaArrowRight /></a>
+          <a className="underline-anchor" id={styles.src} href="https://github.com/pnm122/portfolio" target="_blank">View this portfolio's source <FaArrowRight /></a>
           <span id={styles.copyright}>© 2023</span>
         </div>
       </div>
