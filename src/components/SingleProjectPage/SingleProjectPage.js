@@ -33,6 +33,53 @@ export default function SingleProjectPage(props) {
   // Next project is the next project in the projects array, wrapping around to the start if necessary
   let nextProject = projects[(projects.findIndex(project => { return project.path == path }) + 1) % projects.length];
 
+  let s = "[#]asdf";
+
+  // fun long function to detect [link]text formatted links and turn them into anchors
+  const descriptionToRender = d => {
+    let render = [];
+    let nextStringStartIndex = 0;
+
+    for(let i = 0; i < d.length; i++) {
+      if(i == d.length - 1) render.push(d.substring(nextStringStartIndex, d.length));
+      if(d.charAt(i) != '[') continue;
+
+      let closingBracketIndex = i + 1;
+      while(d.charAt(closingBracketIndex) != ']') {
+        if(closingBracketIndex == d.length) {
+          return "ERROR: No closing bracket in the description";
+        }
+        closingBracketIndex++;
+      }
+
+      let str = "";
+
+      let prevString = d.substring(nextStringStartIndex, i);
+      let link = d.substring(i + 1, closingBracketIndex);
+      let linkText = "";
+      let linkTextIndex = closingBracketIndex + 1;
+      while(linkTextIndex != d.length && d.charAt(linkTextIndex) != ' ') {
+        linkText += d.charAt(linkTextIndex);
+        linkTextIndex++;
+      }
+
+      render.push(prevString);
+      render.push(<a href={link} target="_blank" rel="noreferrer" className={`underline-anchor ${styles.descriptionAnchor}`}>{linkText}</a>)
+      
+      nextStringStartIndex = linkTextIndex;
+    }
+
+    console.log(render);
+
+    return (
+      <p id={styles.description}>
+        {render}
+      </p>
+    )
+  }
+
+  let descriptionRender = descriptionToRender(p.longDescription);
+
   return (
     <>
       <Header />
@@ -56,7 +103,7 @@ export default function SingleProjectPage(props) {
         </table>
       </div>
       <div className="container fadeIn">
-        <p id={styles.description}>{p.longDescription}</p>
+        {descriptionRender}
       </div>
       <div className="container fadeIn" id={styles.images}>
         {imagesRender}

@@ -66,6 +66,14 @@
   bottom: 10px;
 }
 
+.descriptionAnchor {
+  display: inline-block;
+}
+
+.descriptionAnchor::after {
+  bottom: 0;
+}
+
 @media screen and (width < 925px) {
   #links a {
     font-size: 2rem;
