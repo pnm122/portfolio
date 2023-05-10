@@ -31,9 +31,9 @@ export default function Header({selected}) {
       <div className={`container ${styles.headerInner}`}>
         <Link to="/" id={styles.name}>Pierce Martin</Link>
         <div id={styles.links} aria-expanded={expanded}>
-          <a href="#" id={selected == 0 ? styles.selected : null} onClick={() => setExpanded(false)}><span>Resume</span></a>
-          <Link to="/projects" id={selected == 1 ? styles.selected : null} onClick={() => setExpanded(false)}><span>Projects</span></Link>
-          <a href="#contact" id={selected == 2 ? styles.selected : null} onClick={() => setExpanded(false)}><span>Contact Me</span></a>
+          {/* <a href="#" id={selected == 0 ? styles.selected : null} onClick={() => setExpanded(false)}><span>Resume</span></a> */}
+          <Link to="/projects" id={selected == 0 ? styles.selected : null} onClick={() => setExpanded(false)}><span>Projects</span></Link>
+          <a href="#contact" id={selected == 1 ? styles.selected : null} onClick={() => setExpanded(false)}><span>Contact Me</span></a>
         </div>
         <button aria-expanded={expanded} id={styles.dropdownButton} onClick={() => setExpanded(!expanded)}>
           <div />

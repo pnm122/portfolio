@@ -48,7 +48,7 @@ export default function ProjectsPage() {
   let projectsRender = getProjectsRender({limit: -1});
   return (
     <>
-      <Header selected={1} />
+      <Header selected={0} />
       <div className="container fadeIn" id="title">
         <div id={styles.titleInner}>
           <h1 id={styles.projectsTitle}>Projects</h1>
