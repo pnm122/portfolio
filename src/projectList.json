@@ -35,10 +35,10 @@
     "name": "Music App",
     "tools": ["flutter", "github", "adobexd"],
     "shortDescription": "A music-based mobile social media app created as part of a course at the University of Pittsburgh.",
-    "longDescription": "Music App is a music-oriented cross-platform social media app. Its core functionalities include creating text posts, uploading videos of song covers/original songs, commenting on and liking posts, setting a favorite song, album, and artist, searching for other users and songs, and following other users. Users are also able to pin posts on their profile and update their name and bio. I created the app with two others using Flutter as part of a course at the University of Pittsburgh. My responsibilities for the project included creating wireframes using Adobe XD and designing the look and feel of the app, helping create personas, and creating the Homepage and Search pages",
+    "longDescription": "Music App is a music-oriented cross-platform social media app. Its core functionalities include creating text posts, uploading videos of song covers/original songs, commenting on and liking posts, setting a favorite song, album, and artist, searching for other users and songs, and following other users. Users are also able to pin posts on their profile and update their name and bio. I created the app with two others using Flutter as part of a course at the University of Pittsburgh. My responsibilities for the project included creating wireframes using Adobe XD, designing the look and feel of the app, helping create personas, and creating the Homepage, Search pages, Song page, and Comments page.",
     "time": "2022",
-    "cover": "/images/Music App/music-app-cover.png",
-    "images": [],
+    "cover": "/images/Music App/musicapp-cover.png",
+    "images": ["/images/Music App/musicapp-img-1.png", "/images/Music App/musicapp-img-0.png", "/images/Music App/musicapp-img-2.png", "/images/Music App/musicapp-img-3.png"],
     "path": "music-app",
     "source": {
       "type": "GitHub",

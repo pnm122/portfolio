@@ -22,9 +22,9 @@ export default function SingleProjectPage(props) {
 
   let toolsRender = toolsToRender(p.tools);
 
-  let imagesRender = p.images.map(image => {
+  let imagesRender = p.images.map((image, index) => {
     return (
-      <img src={image}></img>
+      <img key={index} src={image}></img>
     )
   })
 

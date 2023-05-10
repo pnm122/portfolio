@@ -9,7 +9,7 @@
   z-index: 2;
 }
 
-.projectInfo {
+.projectInfo p {
   max-width: 400px;
 }
 
@@ -53,6 +53,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: var(--transition-2);
+  line-height: 1.15em;
 }
 
 .project:hover h2 {

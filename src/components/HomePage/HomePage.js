@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { FaArrowRight, FaCss3, FaFigma, FaGithub, FaHtml5, FaJava, FaJs, FaReact } from 'react-icons/fa';
-import { SiAdobexd, SiFirebase, SiFlutter, SiSpring } from 'react-icons/si';
+import { SiAdobexd, SiFirebase, SiFlutter, SiMax, SiSpring } from 'react-icons/si';
 import Header from '../Header/Header';
 import styles from './HomePage.module.css';
 import picture from '../../assets/portfolio-picture.png';
@@ -152,17 +152,18 @@ export default function Homepage() {
       </div>
       <div className="container fadeIn">
         <div id={styles.skills}>
-          <FaHtml5 />
-          <FaCss3 />
-          <FaJs />
-          <FaReact />
-          <FaJava />
-          <SiSpring />
-          <SiFlutter />
-          <SiFirebase />
-          <FaGithub />
-          <FaFigma />
-          <SiAdobexd />
+          <FaHtml5 title="HTML5" />
+          <FaCss3 title="CSS" />
+          <FaJs title="JavaScript" />
+          <FaReact title="React" />
+          <FaJava title="Java" />
+          <SiSpring title="Spring Boot" />
+          <SiFlutter title="Flutter" />
+          <SiFirebase title="Firebase" />
+          <FaGithub title="GitHub" />
+          <FaFigma title="Figma" />
+          <SiAdobexd title="Adobe XD" />
+          <SiMax title="Max/MSP" />
         </div>
       </div>
       <div className="container two-columns fadeIn" id="removeFadeIn">
