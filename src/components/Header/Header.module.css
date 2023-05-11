@@ -120,6 +120,8 @@
   align-items: flex-end;
   gap: 8px;
   display: none;
+  padding: 8px;
+  transform: translateX(8px);
 }
 
 #dropdownButton > div {
