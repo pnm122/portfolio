@@ -41,7 +41,7 @@ export default function ProjectPreview({
   let toolsRender = toolsToRender(tools);
 
   return (
-    <>
+    <div id={styles.projectWrapper}>
       <Link onMouseEnter={() => { setHovering(true); setHasHovered(true) }} onMouseLeave={() => setHovering(false)} to={`/projects/${path}`} className={styles.project} id={`project${id}`}>
         <div className={styles.projectInfo}>
           <h2>{name}</h2>
@@ -60,6 +60,6 @@ export default function ProjectPreview({
         style={{left: mousePos.x, top: mousePos.y}} 
         className={styles.hoverPreview}
       />
-    </>
+    </div>
   )
 }
