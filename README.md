@@ -5,7 +5,7 @@ v1.0.1
 ## v1.0.2
 
 * Fix header button being misaligned
-* [TODO] Fix project page info table overflowing on small screens
+* Fix project page info table overflowing on small screens
 
 ## v1.0.1
 

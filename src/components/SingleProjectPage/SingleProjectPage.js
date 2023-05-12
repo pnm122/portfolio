@@ -85,22 +85,20 @@ export default function SingleProjectPage(props) {
       <Header />
       <div className="container fadeIn" id="title">
         <h1>{p.name}</h1>
-        <table id={styles.infoTable}>
-          <thead>
-            <tr>
-              <th>Time Frame</th>
-              <th>Tech Stack</th>
-              <th>Source</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{p.time}</td>
-              <td>{toolsRender}</td>
-              <td><a href={p.source.link} target="_blank" className="underline-anchor">{p.source.type} <FaExternalLinkAlt /></a></td>
-            </tr>
-          </tbody>
-        </table>
+        <div id={styles.info}>
+          <div>
+            <h6>Time Frame</h6>
+            <span>{p.time}</span>
+          </div>
+          <div>
+            <h6>Tech Stack</h6>
+            <span>{toolsRender}</span>
+          </div>
+          <div>
+            <h6>Source</h6>
+            <a href={p.source.link} target="_blank" className="underline-anchor">{p.source.type} <FaExternalLinkAlt /></a>
+          </div>
+        </div>
       </div>
       <div className="container fadeIn">
         {descriptionRender}

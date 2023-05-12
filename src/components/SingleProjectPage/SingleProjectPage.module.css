@@ -1,27 +1,25 @@
-#infoTable {
-  text-align: left;
-  border-spacing: 0;
+#info {
+  display: flex;
   margin-top: 40px;
   white-space: nowrap;
 }
 
-#infoTable th {
-  font-weight: 400;
-  color: var(--muted-white);
-  padding-bottom: 0.5em;
+#info h6 {
+  padding-bottom: 12px;
+  padding-right: 40px;
   border-bottom: 1px solid var(--line-color);
 }
 
-#infoTable th:not(:last-of-type), #infoTable td:not(:last-of-type) {
+#info span {
+  display: block;
+}
+
+#info span, #info a {
+  padding-top: 12px;
   padding-right: 40px;
 }
 
-#infoTable td {
-  color: white;
-  padding-top: 0.5em;
-}
-
-#infoTable svg:not(:last-of-type) {
+#info svg:not(:last-of-type) {
   margin-right: 0.3em;
 }
 
@@ -93,5 +91,12 @@
 
   #nextProject a {
     margin-top: 0;
+  }
+}
+
+@media screen and (width < 650px) {
+  #info {
+    flex-direction: column;
+    gap: 32px;
   }
 }
