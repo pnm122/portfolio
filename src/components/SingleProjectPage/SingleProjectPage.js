@@ -96,7 +96,7 @@ export default function SingleProjectPage(props) {
           </div>
           <div>
             <h6>Source</h6>
-            <a href={p.source.link} target="_blank" className="underline-anchor">{p.source.type} <FaExternalLinkAlt /></a>
+            <div id={styles.src}><a href={p.source.link} target="_blank" className="underline-anchor">{p.source.type} <FaExternalLinkAlt /></a></div>
           </div>
         </div>
       </div>

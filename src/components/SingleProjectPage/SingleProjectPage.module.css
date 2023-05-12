@@ -10,6 +10,10 @@
   border-bottom: 1px solid var(--line-color);
 }
 
+#src {
+  display: inline-block;
+}
+
 #info span {
   display: block;
 }
@@ -98,5 +102,9 @@
   #info {
     flex-direction: column;
     gap: 32px;
+  }
+
+  #src a {
+    padding-right: 0;
   }
 }
