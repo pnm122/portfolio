@@ -370,3 +370,11 @@ h6 {
     padding-left: 40px;
   }
 }
+
+@media screen and (width < 500px) {
+  body {
+    --xxl-text: 3.5rem;
+    --xl-text: 2.5rem;
+    --l-text: 1.75rem;
+  }
+}

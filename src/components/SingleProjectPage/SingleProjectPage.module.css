@@ -20,7 +20,7 @@
 
 #info span, #info a {
   padding-top: 12px;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 
 #info svg:not(:last-of-type) {
@@ -105,6 +105,6 @@
   }
 
   #src a {
-    padding-right: 0;
+    margin-right: 0;
   }
 }

@@ -1,4 +1,4 @@
-#hero {
+ #hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +44,10 @@
 }
 
 @media screen and (width < 850px) {
+  #hero {
+    gap: 5vw;
+  }
+
   #hero img {
     height: 250px;
   }
