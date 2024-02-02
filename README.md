@@ -1,6 +1,6 @@
 # Pierce Martin's Portfolio
 
-v1.0.3
+v1.1.0
 
 ## v1.1.0
 * Added project "Etheric"
