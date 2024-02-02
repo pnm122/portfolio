@@ -1,6 +1,15 @@
-# Portfolio
+# Pierce Martin's Portfolio
 
 v1.0.3
+
+## v1.1.0
+* Added project "Etheric"
+* Added skills GSAP and TypeScript
+* Minor improvements
+* Update dependencies
+
+## v1.0.4
+* Fixed rotating title fonts not loading
 
 ## v1.0.3
 
@@ -16,13 +25,4 @@ v1.0.3
 
 * Fix overflowing header dropdown on mobile
 
-## TODO
-
-* Add images that fit mobile/desktop better
-* Decrease the quality of the images slightly
-* Add an about page
-* Improve accessibility
-* Update cover photo of me with lower-res and better mask
-* Fix all of the warnings from the console
-
-Created by Pierce Martin - 5/3/2023
+Created by Pierce Martin

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from './ProjectPreview.module.css';
-import { FaCss3, FaFigma, FaGithub, FaHtml5, FaJava, FaJs, FaReact } from 'react-icons/fa';
-import { SiAdobexd, SiFirebase, SiFlutter, SiSpring } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import toolsToRender from 'toolsToRender';
 

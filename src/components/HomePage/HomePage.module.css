@@ -27,8 +27,8 @@
 }
 
 #skills {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
   row-gap: 16px;
   column-gap: 16px;
   position: relative;
@@ -41,6 +41,7 @@
 #skills svg {
   font-size: var(--xl-text);
   fill: var(--muted-white);
+  width: 100%;
 }
 
 @media screen and (width < 850px) {
@@ -53,20 +54,16 @@
   }
 
   #skills {
-    flex-wrap: wrap;
-    column-gap: 0;
-    justify-content: flex-start;
-  }
-
-  #skills svg {
-    width: 16.66%;
-    padding-left: 8px;
-    padding-right: 8px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 }
 
 @media screen and (width < 650px) {
   #hero img {
     display: none;
+  }
+
+  #skills {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

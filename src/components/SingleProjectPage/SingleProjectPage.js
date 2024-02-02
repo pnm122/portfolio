@@ -24,16 +24,16 @@ export default function SingleProjectPage(props) {
 
   let imagesRender = p.images.map((image, index) => {
     return (
-      <img key={index} src={image}></img>
+      <img 
+        key={index} 
+        src={image} 
+        alt={`${p.name} Image ${index + 1}`}
+      />
     )
   })
 
-  let x = [];
-
   // Next project is the next project in the projects array, wrapping around to the start if necessary
   let nextProject = projects[(projects.findIndex(project => { return project.path == path }) + 1) % projects.length];
-
-  let s = "[#]asdf";
 
   // fun long function to detect [link]text formatted links and turn them into anchors
   const descriptionToRender = d => {
@@ -52,8 +52,6 @@ export default function SingleProjectPage(props) {
         closingBracketIndex++;
       }
 
-      let str = "";
-
       let prevString = d.substring(nextStringStartIndex, i);
       let link = d.substring(i + 1, closingBracketIndex);
       let linkText = "";
@@ -68,8 +66,6 @@ export default function SingleProjectPage(props) {
       
       nextStringStartIndex = linkTextIndex;
     }
-
-    console.log(render);
 
     return (
       <p id={styles.description}>
@@ -96,7 +92,15 @@ export default function SingleProjectPage(props) {
           </div>
           <div>
             <h6>Source</h6>
-            <div id={styles.src}><a href={p.source.link} target="_blank" className="underline-anchor">{p.source.type} <FaExternalLinkAlt /></a></div>
+            <div id={styles.src}>
+              <a 
+                href={p.source.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="underline-anchor">
+                {p.source.type} <FaExternalLinkAlt />
+              </a>
+            </div>
           </div>
         </div>
       </div>

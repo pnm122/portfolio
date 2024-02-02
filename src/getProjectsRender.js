@@ -3,11 +3,11 @@ import ProjectPreview from 'components/ProjectPreview/ProjectPreview';
 
 export default function getProjectsRender({limit}) {
   // render only [limit] projects (all of them if limit == -1)
-  projects = projects.filter((e, index) => {
+  let filteredProjects = projects.filter((e, index) => {
     return limit == -1 || index < limit;
   })
 
-  return projects.map(project => {
+  return filteredProjects.map(project => {
     return (
       <ProjectPreview 
         key={project.id}

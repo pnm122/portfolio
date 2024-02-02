@@ -16,6 +16,22 @@
   },
   {
     "id": 2,
+    "name": "Etheric",
+    "tools": ["ts", "react", "css", "firebase", "github", "figma", "gsap"],
+    "shortDescription": "A modern-style web gallery for images, audio, and videos, complete with an admin panel.",
+    "longDescription": "Etheric is a modern-style web gallery for images, audio, and videos, complete with an admin panel, created from scratch for a client on Fiverr. I designed the application in Figma according to the client's specifications. Once they were satisfied with the design, I implemented the design using React, TypeScript, GSAP, and Locomotive Scroll for the frontend, and Firebase for authentication and to store the files and metadata. The client-facing interface features a parallax-scrolling gallery and gallery item description pages, which have custom-made audio players. The admin-facing interface features item uploading, editing, and deletion. Etheric is deployed live [https://etheric-fc36d.web.app/]here.",
+    "time": "2023",
+    "cover": "/images/Etheric/cover-square.png",
+    "images": ["/images/Etheric/Design Guide.png", "/images/Etheric/img-1.png", "/images/Etheric/img-2.png", "/images/Etheric/img-3.png", "/images/Etheric/img-4.png", "/images/Etheric/img-5.png"],
+    "path": "etheric",
+    "source": {
+      "type": "GitHub",
+      "link": "https://github.com/pnm122/etheric"
+    },
+    "liveUrl": "https://etheric-fc36d.web.app/"
+  },
+  {
+    "id": 3,
     "name": "Chat App",
     "tools": ["flutter", "firebase", "github", "adobexd"],
     "shortDescription": "A group chat application featuring accounts, instant messaging, replies, reactions, and more.",
@@ -31,7 +47,7 @@
     "liveUrl": "https://chatapp-ba297.web.app/"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Music App",
     "tools": ["flutter", "github", "adobexd"],
     "shortDescription": "A music-based mobile social media app created as part of a course at the University of Pittsburgh.",
